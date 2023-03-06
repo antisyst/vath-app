@@ -1,0 +1,99 @@
+@import url(../../global.scss);
+
+.import-class-countries-section-component-prototype-element {
+    text-align: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    margin-top: 11vh;
+    margin-bottom: 8vh;
+    background: var(--var-color-component-UI-prototype-element-advanced);
+}
+.import-class-countries-section-component-prototype-element-first-content {
+    font-family: 'Lexend', sans-serif;
+    font-size: calc(10px + 4vmin);
+    color: var(--var-color-component-UI-prototype-element-white);
+    margin-bottom: 3vh;
+    font-weight: bold;
+}
+.import-class-countries-section-component-prototype-element-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 7%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.import-class-countries-section-component-prototype-element-container_item img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+}
+.import-class-countries-section-component-prototype-element-container_item {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.import-class-countries-section-component-prototype-element-container_item h1 {
+    font-family: 'Tilt Warp', cursive;
+    user-select: none;
+    color: var(--var-color-component-UI-prototype-element-white);
+    font-size: calc(10px + 2vmin);
+    margin: 7px 0;
+}
+.import-class-countries-section-component-prototype-element-last-content {
+    color: var(--var-color-component-UI-prototype-element-white);
+    font-family: 'Tilt Warp', cursive;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: calc(10px + 6vmin);
+}
+.import-class-countries-section-component-prototype-element-last-content span {
+    font-size: calc(10px + 7min);
+
+}
+.import-class-countries-section-component-prototype-element-last-content svg {
+    display: inline-block;
+    animation: RocketImg 10s ease 0s infinite normal forwards;
+}
+@keyframes RocketImg {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}
+
+@media only screen and (max-width: 768px)  {
+    .import-class-countries-section-component-prototype-element-container_item h1 {
+        font-family: 'Tilt Warp', cursive;
+        user-select: none;
+        color: var(--var-color-component-UI-prototype-element-white);
+        font-size: calc(10px + 4vmin);
+        margin: 7px 0;
+    }
+}

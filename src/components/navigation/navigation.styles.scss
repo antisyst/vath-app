@@ -1,0 +1,52 @@
+@import url(../../global.scss);
+
+.import-navigation-topbar-element-prototype-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+    background: var(--var-color-component-UI-prototype-element-white);
+    padding: 5px 5%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    height: 75px;
+    width: 100%;
+}
+.import-navigation-topbar-element-prototype-between_item svg {
+    width: 130px;
+    height: 130px;
+}
+.progress-bar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 5px;
+    background: var(--var-color-component-UI-prototype-element-advanced);
+    transform-origin: 0%;
+  }
+  
+  .import-navigation-topbar-element-prototype-between_item p {
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    color: var(--var-color-component-UI-prototype-element-advanced);
+    font-size: calc(10px + 1.6vmin);
+    user-select: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .import-navigation-topbar-element-prototype-between_item p {
+        font-family: 'Lexend', sans-serif;
+        font-weight: bold;
+        color: var(--var-color-component-UI-prototype-element-advanced);
+        font-size: calc(10px + 2.5vmin);
+        user-select: none;
+      }
+      .import-navigation-topbar-element-prototype-between_item svg {
+        width: 100px;
+        height: 100px;
+    }
+  }

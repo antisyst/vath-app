@@ -1,0 +1,99 @@
+@import url(../../global.scss);
+
+.import-class-client-section-component-prototype-element {
+    margin-top: 10vh;
+    margin-bottom: 12vh;
+}
+.import-class-client-section-component-prototype-element-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 8%;
+}
+.import-class-client-section-component-prototype-element-container_item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: top;
+}
+.import-class-client-section-component-prototype-element-container_item p {
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-size: calc(10px + 1vmin);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: var(--var-color-component-UI-prototype-element-black);
+}
+.import-class-client-section-component-prototype-element-container_item h1 {
+    font-size: calc(10px + 5vmin);
+    color: var(--var-color-component-UI-prototype-element-advanced);
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+}
+.import-class-client-section-component-prototype-element-container_item img {
+    width: 700px;
+    animation: showImg 25s ease 0s infinite normal forwards;
+}
+@keyframes showImg {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    .import-class-client-section-component-prototype-element-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 8%;
+    }
+    .import-class-client-section-component-prototype-element-container_item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        vertical-align: top;
+    }
+    .import-class-client-section-component-prototype-element-container_item h1 {
+        font-size: calc(10px + 5vmin);
+        color: var(--var-color-component-UI-prototype-element-advanced);
+        font-family: 'Lexend', sans-serif;
+        font-weight: bold;
+        width: max-content;
+    }
+    .import-class-client-section-component-prototype-element-container_item p {
+        margin-bottom: 50px;
+        padding-left: 0;
+        font-size: calc(10px + 1vmin);
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: var(--var-color-component-UI-prototype-element-black);
+    }
+}
